@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Admin Panel</title>
+</head>
+<body>
+    <header>
+        <h1>Admin Panel</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+                <li><a href="{{ url_for('manage_posts') }}">Manage Posts</a></li>
+                <li><a href="{{ url_for('logout') }}">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Dashboard</h2>
+        <p>Welcome to the admin panel. Here you can manage your blog posts and settings.</p>
+        <!-- Additional admin panel content goes here -->
+    </main>
+    <footer>
+        <p>&copy; {{ year }} Your Blog Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
