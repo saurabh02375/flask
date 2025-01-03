@@ -1,51 +1,12 @@
-{% extends "base.html" %}
+{% extends "front/base.html" %}
 
 {% block title %}Home - Saurabh's Portfolio{% endblock %}
 
 {% block content %}
 
 
-  <div id="preloader">
-        <div id="status">
-            <div class="spinner">Loading...</div>
-        </div>
-    </div>
-    <nav class="navbar navbar-expand-lg fixed-top custom-nav sticky">
-        <div class="container">
-            <a class='navbar-brand logo' href='/'>
-                <img src="public/assets/images/logo.png" alt="" class="img-fluid logo-light">
-                <img src="public/assets/images/logo.png" alt="" class="img-fluid logo-dark">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="mdi mdi-menu"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#award" class="nav-link">Awards</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#education" class="nav-link">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#experiance" class="nav-link">Experiance</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
     <section class="section h-100vh jarallax" data-jarallax='{"speed": 0.2}'
-        style="background-image: url('public/assets/images/home-bg.jpg');" id="home">
+        style="background-image: url('static/admin/assets/images/home-bg.jpg');" id="home">
         <div class="bg-overlay"></div>
         <div class="container position-relative z-index">
             <div class="row justify-content-center">
